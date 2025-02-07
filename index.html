@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Rose Day</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="switch-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle" />
+        <span class="slider"></span>
+      </label>
+      <p id="mode-text">From Laksh to Megha 💖</p>
+    </div>
+
+    <div class="container">
+      <div class="rose-animation">
+        <div class="glass"><div class="shine"></div></div>
+        <div class="thorns"><div></div><div></div></div>
+        <div class="leaves"><div></div><div></div></div>
+        <div class="petals"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+      <div class="text">
+        <h2 id="love-text">You are my favourite rose🌹<br />
+         <a href="new.html">Click Here</a></h2>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('toggle').addEventListener('change', function() {
+        let text = document.getElementById('love-text');
+        let modeText = document.getElementById('mode-text');
+        if (this.checked) {
+          text.innerHTML = " In the garden of life, you're  <br />my most cherished blossom. 💖<a href='new2.html'>Click Here</a>";
+          modeText.innerText = "From Megha to Laksh 💖 ";
+        } else {
+          text.innerHTML = "You are my favourite rose🌹 <br /><a href='new.html'>Click Here</a>";
+          modeText.innerText = "From Laksh to Megha 💙";
+        }
+      });
+    </script>
+  </body>
+</html>
